@@ -119,7 +119,7 @@
                 } else {
                     return $("<li></li>")
                         .data( "item.autocomplete", item )
-                        .append( "<a>" + item.label + "</a>")
+                        .append( "<a>" + encodeURI(item.label) + "</a>")
                         .appendTo(ul);
                 }
             };
