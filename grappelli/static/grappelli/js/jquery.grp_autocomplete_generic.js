@@ -154,7 +154,7 @@
                 } else {
                     return $("<li></li>")
                         .data( "item.autocomplete", item )
-                        .append( "<a>" + encodeURI(item.label) + "</a>")
+                        .append( "<a>" + $('<div/>').text(item.label).html() + "</a>")
                         .appendTo(ul);
                 }
             };
